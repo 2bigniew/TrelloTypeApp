@@ -8,11 +8,9 @@ function getStartData(username) {
     axios.get(`http://127.0.0.1:5000/${username}`).
     then(response => {
         response.data.forEach((task, i) => {
-            console.log(task);
             addNewTask(task);
             loader.style = "display: none;";
         });
-        getApiButtons();
     });
 };
 

@@ -1,5 +1,26 @@
 body {
-    background: linear-gradient(rgba(226, 219, 219, 0.493), rgba(59, 57, 59, 0.918), rgba(209, 203, 203, 0.525)), url('./bg.jpg');
+    background: linear-gradient(rgba(161, 176, 219, 0.199), rgba(74, 124, 216, 0.507), rgba(155, 178, 207, 0.205)), url('./bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+input {
+    margin: 10px 0;
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(98, 69, 102);
+}
+
+.out-btn {
+    display: none;
+}
+
+
+.section-bg{
+    background: linear-gradient(rgba(105, 114, 141, 0.493), rgba(39, 65, 114, 0.918), rgba(102, 117, 133, 0.525)), url('./bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,3 +38,31 @@ body {
 .done-btn {
     background: rgb(200, 240, 200);
 }
+
+.sign-in-err {
+    font-size: 1.2rem;
+    color: rgb(221, 97, 97);
+}
+
+.task-label {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    animation: moveLabel 15s linear infinite;
+}
+
+.delete-msg {
+    margin-bottom: 50px;
+    color: rgb(32, 71, 32);
+}
+
+.card-margin {
+    margin-bottom: 20px;
+}
+
+@keyframes moveLabel{
+    0% {color: black}
+    5% {color: white;}
+    10% {color: black}
+    100% {color: black}
+}
+

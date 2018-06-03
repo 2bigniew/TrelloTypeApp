@@ -16,33 +16,41 @@
 <body>
     <div class="container">
 
-        <div class="row justify-content-center">
-            <h1>Trello Type App</h1>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-9 col-sm-12">
-                <h2>Create account to save your tasks</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-8 col-sm-12 justify-content-left">
+                <div class="jumbotron section-bg">
+                    <div class="container">
+                        <h1 class="display-8">Trello Type App</h1>
+                        <p class="lead">Manage your tasks quick and simply.</p>
+                        <hr class="my-4">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-12 offset-lg-4 justify-content-right">
+                <div class="jumbotron section-bg">
+                    <div class="container">
+                        <h2 class="display-8">Create account to save your tasks</h2>
+                        <hr class="my-4">
+                        <input type="text" placeholder="Your username..." id="input-username" value="BobbyFirmino" />
+                        <input type="password" placeholder="Your password..." id="input-pass" value="lfcynwa" />
+                        <button id="sign-in-btn" class="btn btn-dark">Sign In!</button>
+                        <button id="sign-out-btn" class="btn btn-dark out-btn">Sign Out</button>
+                        <p id="sign-in-error" class="sign-in-err"></p>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-9 col-sm-12">
-                <label class="label">Sign in</label>
-                <input type="text" placeholder="Your username..." id="input-username" />
-                <input type="password" placeholder="Your password..." id="input-pass" />
-                <button id="sign-in-btn" class="btn btn-info">Sign In!</button>
-                <p id="sign-in-error" style="color: red;"></p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-9 col-sm-12">
+            <div class="col-lg-5 col-md-6 col-sm-8 add-task-box">
                 <h3 id="hello" data-username=""></h3>
-                <label>Add task</label>
+                <label class="task-label">Add task!</label>
                 <input type="text" placeholder="Your task..." id="input-task" disabled/>
-                <button id="add-task-btn" class="btn btn-info disabled">Add</button>
+                <button id="add-task-btn" class="btn btn-light disabled" disabled>Add</button>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-4 card-margin">
                 <div class="card" style="width: 90%;" id="todo-container">
                     <div class="card-body">
                         <h3 class="card-title">Todo</h3>
@@ -51,7 +59,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-4  card-margin">
                 <div class="card" style="width: 90%;" id="progress-container">
                     <div class="card-body">
                         <h3 class="card-title">Progress</h3>
@@ -60,7 +68,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-4  card-margin">
                 <div class="card" style="width: 90%;" id="done-container">
                     <div class="card-body">
                         <h3 class="card-title">Done</h3>
@@ -71,6 +79,13 @@
             </div>
         </div>
     </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-8 del-msg-box">
+            <div class="delete-msg"></div>
+        </div>
+    </div>
+
 
     <div class="loader-background" id='loader'>
         <div class="parent-loader">
