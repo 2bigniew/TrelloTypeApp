@@ -1,0 +1,50 @@
+.loader-background {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(240, 240, 240, 0.219);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+.loader{
+    width: 80px;
+    height: 80px;
+    border-top: 7px dotted rgb(80,130,120);
+    border-bottom: 7px dotted rgb(80,130,120);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 100%;
+    animation: spin 1s linear infinite;
+}
+
+.parent-loader{
+    width: 150px;
+    height: 150px;
+    border-top: 7px dotted rgb(80,120,130);
+    border-bottom: 7px dotted rgb(80,120,130);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 100%;
+    animation: spinner2 1.5s linear infinite;
+}
+
+@keyframes spin{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(-360deg)}
+}
+
+@keyframes spinner2{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(-360deg)}
+}
